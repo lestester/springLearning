@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--first day learning-->
+    <bean id="chineseMessage" class="firstDay.ChineseMessage"/>
+    <bean id="englishMessage" class="firstDay.EnglishMessage" />
+    <bean id="person" class="firstDay.Person">
+        <property name="iHelloMessage" ref="englishMessage"/>
+    </bean>
+
+</beans>
