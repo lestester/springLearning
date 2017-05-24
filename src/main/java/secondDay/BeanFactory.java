@@ -101,7 +101,7 @@ public class BeanFactory {
 
         Object bean = beansMap.get(beanId);
         if (bean == null) {
-            throw new Exception("not find bean by name " + beanId);
+            throw new Exception("Can not find bean by name " + beanId );
         }
 
         return bean;
